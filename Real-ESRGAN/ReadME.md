@@ -11,6 +11,7 @@ cd Real-ESRGAN
 #Download PreTrained Models
 wget https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.2.4/RealESRGAN_x4plus_anime_6B.pth -P weights
 wget https://github.com/xinntao/Real-ESRGAN/releases/download/v0.1.0/RealESRGAN_x4plus.pth -P weights
+wget https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-animevideov3.pth -P weights
 
 #Create and Activate Conda Environment with python==3.11
 conda create -n realesrgan-env python==3.11
@@ -56,6 +57,11 @@ python inference_realesrgan.py -n RealESRGAN_x4plus_anime_6B -i inputs
 ```
 
 ![Screenshot from 2024-11-05 12-04-31](https://github.com/user-attachments/assets/a54e474d-e486-4942-8098-6299bee47355)
+
+# Inference on Video
+```
+python inference_realesrgan_video.py -n realesr-animevideov3 -i inputs/video/onepiece_demo.mp4 -o results/video/onepiece_enhanced.mp4
+```
 
 
 # Reference
