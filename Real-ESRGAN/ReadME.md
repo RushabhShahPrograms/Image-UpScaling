@@ -48,7 +48,16 @@ conda install pytorch==1.7.1 torchvision==0.8.2 cudatoolkit=11.0 -c pytorch
 python inference_realesrgan.py -n RealESRGAN_x4plus -i inputs
 ```
 
+![Screenshot from 2024-11-05 12-08-31](https://github.com/user-attachments/assets/62f26901-bef2-401f-a058-e884fa73dd1c)
+
 # For anime
 ```
 python inference_realesrgan.py -n RealESRGAN_x4plus_anime_6B -i inputs
 ```
+
+![Screenshot from 2024-11-05 12-04-31](https://github.com/user-attachments/assets/a54e474d-e486-4942-8098-6299bee47355)
+
+
+# Reference
+For more info refer [original-readme.md](https://github.com/RushabhShahPrograms/Image-UpScaling/blob/master/Real-ESRGAN/Orginial-README.md) file
+
